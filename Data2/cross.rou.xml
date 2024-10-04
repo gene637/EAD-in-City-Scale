@@ -1,0 +1,71 @@
+<routes>
+        <vType id="typeWE" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" guiShape="passenger" carFollow-Model="IDM"/>
+        <vType id="typeWE_L" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" vClass="vip" guiShape="passenger" carFollow-Model="IDM"/>
+        <vType id="typeWE_R" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" vClass="private" guiShape="passenger" carFollow-Model="IDM"/>
+        <vType id="typeCAV" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" guiShape="passenger" carFollow-Model="CACC"/>
+        <vType id="typeCAV_L" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" vClass="vip" guiShape="passenger" carFollow-Model="CACC"/>
+        <vType id="typeCAV_R" accel="0.73" decel="4.5" sigma="0.5" length="5" minGap="2.5" tau="1.5" maxSpeed="16" vClass="private" guiShape="passenger" carFollow-Model="CACC"/>
+
+        <route id="right" edges="1_4i 1_3i 1_2i 1i 2o" />
+        <route id="left" edges="2_3i 2_2i 2i 1o" />
+        <route id="down" edges="4_3i 4_2i 4i 3o" />
+        <route id="up" edges="3_3i 3_2i 3i 4o" />
+        <route id="right_L" edges="1_4i 1_3i 1_2i 1i 4o" />
+        <route id="left_L" edges="2_3i 2_2i 2i 3o" />
+        <route id="down_L" edges="4_3i 4_2i 4i 2o" />
+        <route id="up_L" edges="3_3i 3_2i 3i 1o" />
+        <route id="right_R" edges="1_4i 1_3i 1_2i 1i 3o" />
+        <route id="left_R" edges="2_3i 2_2i 2i 4o" />
+        <route id="down_R" edges="4_3i 4_2i 4i 1o" />
+        <route id="up_R" edges="3_3i 3_2i 3i 2o" />
+    <vehicle id="CAV_right_L_0" type="typeCAV_L" route="right_L" depart="10" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_1" type="typeCAV_L" route="right_L" depart="22" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_up_2" type="typeCAV" route="up" depart="24" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_3" type="typeCAV_L" route="right_L" depart="30" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_L_4" type="typeCAV_L" route="left_L" depart="32" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_5" type="typeCAV" route="right" depart="35" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_left_6" type="typeCAV" route="left" depart="49" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_left_7" type="typeCAV" route="left" depart="56" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_L_8" type="typeCAV_L" route="down_L" depart="84" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_9" type="typeCAV_L" route="right_L" depart="93" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_10" type="typeCAV" route="left" depart="96" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_11" type="typeCAV" route="down" depart="149" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_up_R_12" type="typeCAV_R" route="up_R" depart="161" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_right_13" type="typeCAV" route="right" depart="175" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_14" type="typeCAV_L" route="right_L" depart="183" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_15" type="typeCAV" route="right" depart="210" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_up_16" type="typeCAV" route="up" depart="227" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_L_17" type="typeCAV_L" route="left_L" depart="227" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_18" type="typeCAV" route="left" depart="233" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_19" type="typeCAV" route="down" depart="241" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_down_L_20" type="typeCAV_L" route="down_L" depart="273" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_R_21" type="typeCAV_R" route="down_R" depart="274" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_right_22" type="typeCAV" route="right" depart="281" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_left_23" type="typeCAV" route="left" depart="290" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_24" type="typeCAV" route="down" depart="306" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_25" type="typeCAV_L" route="right_L" depart="308" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_L_26" type="typeCAV_L" route="left_L" depart="313" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_up_R_27" type="typeCAV_R" route="up_R" depart="316" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_down_R_28" type="typeCAV_R" route="down_R" depart="335" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_left_29" type="typeCAV" route="left" depart="338" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_30" type="typeCAV" route="down" depart="342" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_down_R_31" type="typeCAV_R" route="down_R" depart="346" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_down_L_32" type="typeCAV_L" route="down_L" depart="358" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_33" type="typeCAV" route="left" depart="359" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_34" type="typeCAV_L" route="right_L" depart="359" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_left_L_35" type="typeCAV_L" route="left_L" depart="370" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_R_36" type="typeCAV_R" route="down_R" depart="387" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_up_R_37" type="typeCAV_R" route="up_R" depart="406" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_up_L_38" type="typeCAV_L" route="up_L" depart="412" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_39" type="typeCAV" route="down" depart="414" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_L_40" type="typeCAV_L" route="right_L" depart="420" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_R_41" type="typeCAV_R" route="down_R" depart="430" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_right_42" type="typeCAV" route="right" depart="432" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_right_43" type="typeCAV" route="right" depart="441" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_up_44" type="typeCAV" route="up" depart="453" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_right_L_45" type="typeCAV_L" route="right_L" depart="461" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_46" type="typeCAV" route="right" depart="463" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_down_L_47" type="typeCAV_L" route="down_L" depart="470" departLane = "2" color="1,0,0" />
+    <vehicle id="CAV_right_48" type="typeCAV" route="right" depart="484" departLane = "1" color="1,0,0" />
+    <vehicle id="CAV_down_49" type="typeCAV" route="down" depart="491" departLane = "2" color="1,0,0" />
+</routes>
